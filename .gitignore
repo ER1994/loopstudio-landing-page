@@ -42,3 +42,6 @@ npm-debug.log*
 *.pem
 .DS_Store
 Thumbs.db
+
+#sass maps
+*.css.map
