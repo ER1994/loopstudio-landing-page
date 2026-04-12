@@ -9,21 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="scripts/menuExtension.js" defer></script>
     <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 <body>
 <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <img src="./images/logo.svg" alt="Logo">
-        <button type="button" class="menu-button"><img src="./images/icon-hamburger.svg" alt="Menu"></button>
-        <ul class="nav-list" hidden>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Support</a></li>
+        <button type="button" class="menu-button"><img src="./images/icon-hamburger.svg" alt="Menu" id="menuBtn"></button>
+        <ul class="header-nav-list_visible" id="header-nav-list">
+            <li><a href="#" class="header-nav-link">About</a></li>
+            <li><a href="#" class="header-nav-link">Careers</a></li>
+            <li><a href="#" class="header-nav-link">Events</a></li>
+            <li><a href="#" class="header-nav-link">Products</a></li>
+            <li><a href="#" class="header-nav-link">Support</a></li>
         </ul>
     </nav>
+    <div class="nav-extended_hidden" id="nav-extended">
+        <img src="./images/logo.svg" alt="Logo">
+        <button type="button" class="exit-button" id="exit-button"><img src="./images/icon-close.svg" alt="Exit button"></button>
+        <ul class="header-nav-list_extended" id="header-nav-list">
+            <li><a href="#" class="header-nav-extended">About</a></li>
+            <li><a href="#" class="header-nav-extended">Careers</a></li>
+            <li><a href="#" class="header-nav-extended">Events</a></li>
+            <li><a href="#" class="header-nav-extended">Products</a></li>
+            <li><a href="#" class="header-nav-extended">Support</a></li>
+        </ul>
+    </div>
     <h1 class="header-title">
         IMMERSIVE EXPERIENCES THAT DELIVER
     </h1>
